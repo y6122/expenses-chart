@@ -1,0 +1,106 @@
+:root{
+    --Soft-red: hsl(10, 79%, 65%);
+    --Cyan: hsl(186, 34%, 60%);
+    --Dark-brown: hsl(25, 47%, 15%);
+    --Medium-brown: hsl(28, 10%, 53%);
+    --Cream: hsl(27, 66%, 92%);
+    --Very-pale-orange: rgb(255, 250, 245);
+    --font-size:62.5%;
+    --font-family:'DM Sans', sans-serif;
+    --font-w-s:400;
+    --font-w-m:700;
+
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--Cream);
+   display: grid;
+   place-items: center;
+   height: 90vh;
+font-size: var(--font-size);
+font-family: var(--font-family);
+}
+.wrapper>*{
+    border-radius: 10px;
+    padding:2em;
+    
+}
+.wrapper{
+    width: 95vw;
+   max-width: 450px;
+}
+.wrapper .header{
+    background-color: var(--Soft-red);
+    color:var(--Very-pale-orange);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5em;
+    
+}
+.wrapper .header .my-balance{
+    font-size:1rem;
+    font-weight: var(--font-w-s);
+    
+
+}
+.wrapper .header .my-balance >span{
+    display: block;
+    font-size:1.4rem;
+    font-weight: var(--font-w-m);
+    margin-top: 0.1em;
+
+}
+.wrapper .main{
+    background-color: var(--Very-pale-orange);
+}
+.wrapper .main .spending{
+    font-size: 1.8rem;
+    font-weight: var(--font-w-m);
+    color:var(--Dark-brown);
+    margin-bottom: 0.6em;
+}
+.wrapper .main .chart-box{
+    padding-bottom: 2em;
+}
+.wrapper .main .total-of-month{
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding-top:2em;
+}
+.wrapper .main .total-of-month .title{
+    font-size:0.9rem;
+    font-weight: var(--font-w-s);
+    color: var(--Medium-brown);
+
+
+}
+.wrapper .main .total-of-month .title>span{
+    font-size:1.8rem;
+    display: block;
+    font-weight: var(--font-w-m);
+    color:var(--Dark-brown);
+
+
+}
+.wrapper .main .total-of-month  .from-last-month{
+    font-size:0.9rem;
+    font-weight: var(--font-w-s);
+    align-self: center;
+    text-align: right;
+    color: var(--Medium-brown);
+
+
+}
+.wrapper .main .total-of-month  .from-last-month>span{
+    display: block;
+    font-weight: var(--font-w-m);
+    color:var(--Dark-brown);
+
+
+}

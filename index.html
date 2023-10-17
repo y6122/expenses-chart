@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Expenses chart component</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <h2 class="my-balance">
+          My balance
+          <span class="balance-number">$921.48</span>
+        </h2>
+        <img src="src/images/logo.svg" alt="logo" class="logo" />
+      </div>
+      <div class="main">
+        <h3 class="spending">Spending - Last 7 days</h3>
+        <div class="chart-box">
+          <canvas id="chart-bar"></canvas>
+        </div>
+        <div class="total-of-month">
+          <h4 class="title">
+            Total this month
+            <span class="total-number">$478.33</span>
+          </h4>
+          <h4 class="from-last-month">
+            <span class="total-percent">+2.4%</span>
+            from last month
+          </h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- 
+ 
+
+  mon
+  tue
+  wed
+  thu
+  fri
+  sat
+  sun -->
+
+    <script type="module" src="./src/js/app.js"></script>
+  </body>
+</html>
