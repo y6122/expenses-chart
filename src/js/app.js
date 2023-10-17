@@ -1,4 +1,4 @@
-import Chart from "chart.js/auto/auto";
+import Chart from "chart.js/auto";
 
 const chartBox = document.getElementById("chart-bar");
 
